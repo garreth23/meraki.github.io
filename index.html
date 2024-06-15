@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foodtruck Meraki - Shawarma Árabe</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000; /* Fondo negro */
+            color: #ffd700; /* Texto dorado */
+        }
+        header {
+            background-color: #ffd700; /* Fondo dorado para el encabezado */
+            color: #000; /* Texto negro para el encabezado */
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            background-color: #ffd700; /* Fondo dorado para la barra de navegación */
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: #000; /* Texto negro para los enlaces de navegación */
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .container {
+            padding: 20px;
+            max-width: 800px;
+            margin: auto;
+            background-color: #000; /* Fondo negro para los contenedores principales */
+            color: #ffd700; /* Texto dorado para los contenedores principales */
+        }
+        .product {
+            border: 1px solid #ffd700; /* Borde dorado para los productos */
+            border-radius: 5px;
+            background-color: #333; /* Fondo negro para los productos */
+            padding: 10px;
+            margin-bottom: 15px;
+        }
+        .product img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        .product h2 {
+            font-size: 1.5em;
+            color: #ffd700; /* Texto dorado para los encabezados de productos */
+            margin-top: 5px;
+        }
+        .product p {
+            font-size: 1em;
+            color: #fff; /* Texto blanco para la descripción de productos */
+        }
+        .product .price {
+            font-size: 1.2em;
+            color: #ffd700; /* Texto dorado para el precio de los productos */
+            font-weight: bold;
+        }
+        .contact-info {
+            margin-top: 30px;
+        }
+        .contact-info h2 {
+            font-size: 1.5em;
+            color: #ffd700; /* Texto dorado para los encabezados de información de contacto */
+            margin-bottom: 10px;
+        }
+        .contact-info p {
+            font-size: 1em;
+            color: #fff; /* Texto blanco para la información de contacto */
+            margin-bottom: 5px;
+        }
+        .order-form {
+            margin-top: 30px;
+            border: 1px solid #ffd700; /* Borde dorado para el formulario de pedido */
+            padding: 20px;
+            background-color: #333; /* Fondo negro para el formulario de pedido */
+            border-radius: 5px;
+        }
+        .order-form h2 {
+            font-size: 1.5em;
+            color: #ffd700; /* Texto dorado para los encabezados de formulario */
+            margin-bottom: 10px;
+        }
+        .order-form label {
+            display: block;
+            margin-bottom: 10px;
+            font-size: 1em;
+            color: #ffd700; /* Texto dorado para las etiquetas del formulario */
+            text-align: left;
+        }
+        .order-form input[type="text"],
+        .order-form input[type="email"],
+        .order-form textarea {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ffd700; /* Borde dorado para los campos de entrada */
+            border-radius: 5px;
+            font-size: 1em;
+            background-color: #000; /* Fondo negro para los campos de entrada */
+            color: #ffd700; /* Texto dorado para los campos de entrada */
+        }
+        .order-form textarea {
+            resize: vertical;
+        }
+        .order-form button {
+            padding: 10px 20px;
+            background-color: #ffd700; /* Fondo dorado para el botón */
+            color: #000; /* Texto negro para el botón */
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+        }
+        .order-form button:hover {
+            background-color: #c9a300; /* Cambio de color al pasar el ratón */
+        }
+        .video-container {
+            position: relative;
+            width: 480px; /* Tamaño completo */
+            height: 270px;
+            margin: 0 auto;
+            overflow: hidden;
+            margin-bottom: 20px;
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="video-container">
+        <!-- Inserción del video de YouTube con autoplay -->
+        <!-- <iframe width="480" height="270" src="https://www.youtube.com/embed/fZ3PqU2EoOM?autoplay=1" frameborder="0" allowfullscreen></iframe> -->
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/fZ3PqU2EoOM?autoplay=1&mute=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <header>
+        <h1>Foodtruck Meraki - Shawarma Árabe</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#catalogo">Catálogo</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+            <li><a href="#pedidos">Pedidos</a></li>
+        </ul>
+    </nav>
+    <div class="container" id="catalogo">
+        <h2>Catálogo de Productos</h2>
+        <div class="product">
+            <img src="https://via.placeholder.com/300x200" alt="Shawarma">
+            <h2>Shawarma de Pollo</h2>
+            <p>Delicioso shawarma árabe de pollo marinado con especias tradicionales.</p>
+            <p class="price">$8.00</p>
+        </div>
+        <div class="product">
+            <img src="https://via.placeholder.com/300x200" alt="Shawarma">
+            <h2>Shawarma de Carne</h2>
+            <p>Jugoso shawarma árabe de carne asada a la parrilla con vegetales frescos.</p>
+            <p class="price">$10.00</p>
+        </div>
+    </div>
+    <div class="container" id="contacto">
+        <div class="contact-info">
+            <h2>Información de Contacto</h2>
+            <p><strong>Dirección:</strong> Av. Ejemplo #123, Ciudad, País</p>
+            <p><strong>Teléfono:</strong> +1 234 567 890</p>
+            <p><strong>Email:</strong> info@foodtruckmeraki.com</p>
+        </div>
+    </div>
+    <div class="container" id="pedidos">
+        <div class="order-form">
+            <h2>Haz tu Pedido</h2>
+            <form action="#" method="POST">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="pedido">Pedido:</label>
+                <textarea id="pedido" name="pedido" rows="4" required></textarea>
+                <button type="submit">Enviar Pedido</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
