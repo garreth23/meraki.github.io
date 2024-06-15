@@ -1,0 +1,10 @@
+Visual studio
+
+1- modificar codigo en rama "cambios"
+2-guardar con ctrl mas S
+3-commit con comentario
+4-sync con comentario
+
+en github web
+-pull request
+-marge
